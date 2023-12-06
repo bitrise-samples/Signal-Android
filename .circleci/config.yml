@@ -17,6 +17,8 @@ jobs:
     executor:
       name: android/android-machine
       tag: 2023.11.1
+    environment:
+      ENABLE_BITRISE_BUILD_CACHE: "true"
 
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
