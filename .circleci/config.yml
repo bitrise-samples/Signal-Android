@@ -36,7 +36,7 @@ jobs:
             ./gradlew --write-verification-metadata sha256
       - run:
           name: Lint PlayProdDebug
-          no_output_timeout: 30m
+          no_output_timeout: 60m
           command: ./gradlew :Signal-Android:lintPlayProdDebug
       # - run:
       #     name: Assemble playProdDebug
@@ -65,7 +65,7 @@ jobs:
             ./gradlew --write-verification-metadata sha256
       - run:
           name: Lint PlayProdDebug
-          no_output_timeout: 30m
+          no_output_timeout: 60m
           command: ./gradlew :Signal-Android:lintPlayProdDebug
       # - run:
       #     name: Assemble playProdDebug
