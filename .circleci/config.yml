@@ -35,7 +35,7 @@ jobs:
           command: |
             ./gradlew --write-verification-metadata sha256
       - android/run-tests:
-          test-command: ./gradlew :Signal-Android:lintPlayProdDebug --info
+          test-command: ./gradlew :Signal-Android:lintPlayProdDebug
       - run:
           name: Assemble playProdDebug
           command: ./gradlew :Signal-Android:assemblePlayProdDebug
@@ -62,7 +62,7 @@ jobs:
           command: |
             ./gradlew --write-verification-metadata sha256
       - android/run-tests:
-          test-command: ./gradlew :Signal-Android:lintPlayProdDebug --info
+          test-command: ./gradlew :Signal-Android:lintPlayProdDebug
       - run:
           name: Assemble playProdDebug
           command: ./gradlew :Signal-Android:assemblePlayProdDebug
